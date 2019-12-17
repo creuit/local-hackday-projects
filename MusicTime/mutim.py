@@ -78,7 +78,7 @@ def main():
 
     #fibonacci for the important beats:
     x = 0
-    y =1
+    y = 1
     z = 0
     sum = 0
     while y < sec_total:
@@ -86,7 +86,7 @@ def main():
         x = y
         y = z
         sum += z
-        if z > measure:
+        if z < measure:
             measuref = (sum / pulses)
             print('measure: ', measuref)
         print(z)
